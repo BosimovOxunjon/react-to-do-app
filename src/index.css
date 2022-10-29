@@ -1,13 +1,173 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 360px;
+  min-height: 400px;
+  margin: auto;
+  background: rgb(60 59 59);
+  padding-bottom: 50px;
+}
+
+.header {
+  height: 30px;
+  padding-top: 10px;
+  border-bottom: 1px solid;
+}
+
+.nav {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nav-link {
+  position: relative;
+  color: grey;
+  text-decoration: none;
+  margin: 15px;
+  font-size: 10px;
+}
+
+.active {
+  position: relative;
+  color: #fff;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  width: auto;
+  right: -10px;
+  left: -10px;
+  bottom: -9px;
+  height: 2px;
+  background: rgb(255, 0, 106);
+}
+
+.timer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.timer-week-day {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.timer-item {
+  color: grey;
+  margin: 0 3px;
+}
+
+.form-wrapper {
+  padding: 0 10%;
+}
+
+.add-task-input {
+  width: 87%;
+  padding: 8px;
+  padding-left: 30px;
+  background: rgb(34 34 34);
+  color: rgb(104, 104, 104);
+  border: none;
+  border-radius: 4px;
+}
+
+.add-task-btn {
+  position: relative;
+  left: 4%;
+  bottom: 25px;
+  color: rgb(104, 104, 104);
+}
+
+.task-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.task-form {
+  height: fit-content;
+}
+
+.task-form-item {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.task-form-btns {
+  position: relative;
+  /* top: -5px; */
+  width: max-content;
+  margin-left: auto;
+  padding: 10px;
+  background: #505050;
+  font-size: 10px;
+  align-items: center;
+  color: rgb(155, 152, 152);
+  border-radius: 4px;
+  box-shadow: black 1px 1px 6px;
+}
+
+.task-btn-dots {
+  margin-top: 10px;
+}
+
+.task-form-icon {
+  margin-right: 5px;
+}
+
+.task-btn-arrow {
+  position: absolute;
+  font-size: 20px;
+  color: #505050;
+  top: -13px;
+  right: -3px;
+}
+
+.task-pin-icon {
+  position: relative;
+  display: flex;
+  left: -8%;
+  bottom: -20px;
+
+  color: #ef1fa5;
+}
+
+.task-pin-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+}
+
+.task-pin-label.btn {
+  margin-left: auto;
+}
+
+.task-pinned-btns {
+  margin-top: 10px;
+}
+
+.btn-pin,
+.btn-edit {
+  margin-bottom: 5px;
 }
